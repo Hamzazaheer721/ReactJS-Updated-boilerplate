@@ -17,13 +17,20 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking", //
   ],
   overrides: [],
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["src"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
+  },
   // parser: '@typescript-eslint/parser', // deprecated
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
     project: "./tsconfig.json",
     ecmaFeatures: {
-      //
       jsx: true,
     },
   },
