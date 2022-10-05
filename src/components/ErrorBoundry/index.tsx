@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-wrap-multilines */
 /* eslint-disable no-console */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 
+import { Result } from "antd";
 import { IErrorBoundryProps, IErrorBoundryState } from "general";
 import { Component, ErrorInfo } from "react";
 import "./index.css";
@@ -33,22 +34,7 @@ export class ErrorBoundry extends Component<
     if (!hasError) return children;
 
     return (
-      <div className="error-boundry-container">
-        <div className="mainbox">
-          <div className="mainbox__error--text">404</div>
-          <div className="mainbox__error--message">
-            Maybe this page moved? Got deleted? Is hiding out in quarantine?
-            Never existed in the first place?
-            <p className="mainbox__error--passage">
-              Let's go{" "}
-              <a className="mainbox__error--passage-anchor" href="">
-                home
-              </a>{" "}
-              and try from there.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Result status="404" title="404" subTitle="Ops, Something went wrong" />
     );
   }
 }

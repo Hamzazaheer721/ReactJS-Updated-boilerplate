@@ -5,5 +5,6 @@ export const routes: Array<RoutesType> = [
   {
     path: "/",
     Component: Home,
+    key: "1",
   },
 ];
