@@ -31,17 +31,20 @@ export class ErrorBoundry extends Component<
     const { children } = this.props;
 
     if (!hasError) return children;
+
     return (
       <div className="error-boundry-container">
         <div className="mainbox">
-          <div className="err">4</div>
-          <i className="middle"> 0 </i>
-          <div className="err2">4</div>
-          <div className="msg">
+          <div className="mainbox__error--text">404</div>
+          <div className="mainbox__error--message">
             Maybe this page moved? Got deleted? Is hiding out in quarantine?
             Never existed in the first place?
-            <p>
-              Let's go <a href="">home</a> and try from there.
+            <p className="mainbox__error--passage">
+              Let's go{" "}
+              <a className="mainbox__error--passage-anchor" href="">
+                home
+              </a>{" "}
+              and try from there.
             </p>
           </div>
         </div>
