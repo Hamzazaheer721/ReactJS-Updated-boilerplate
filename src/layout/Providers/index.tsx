@@ -3,6 +3,7 @@ import { FC } from "react";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme, GlobalStyle } from "styles";
 import { IProvidersProps } from "./types";
+import "antd/dist/antd.css";
 
 export const Providers: FC<IProvidersProps> = ({ children }) => (
   <ThemeProvider theme={defaultTheme}>
