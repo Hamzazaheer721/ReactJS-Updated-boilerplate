@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from "react";
 
 export type RoutesType = {
   path: string;
-  component: FunctionComponent;
+  Component: FunctionComponent;
 };
 export interface IErrorBoundryState {
   hasError: boolean;
@@ -10,4 +10,7 @@ export interface IErrorBoundryState {
 
 export interface IErrorBoundryProps {
   children?: ReactNode;
+}
+export interface IDefaultThemeProps {
+  color: Record<string, string>;
 }

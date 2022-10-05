@@ -1,3 +1,4 @@
+import { RoutesType } from "general";
 import { FC } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./helper";
@@ -5,8 +6,8 @@ import { routes } from "./helper";
 const RouteComponent: FC = () => (
   <Router>
     <Routes>
-      {routes.map((route) => (
-        <Route path={route.path} element={<route.component />} />
+      {routes.map(({ path, Component }: RoutesType) => (
+        <Route path={path} element={<Component />} />
       ))}
     </Routes>
   </Router>

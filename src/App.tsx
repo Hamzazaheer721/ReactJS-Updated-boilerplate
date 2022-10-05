@@ -1,11 +1,11 @@
-import { ErrorBoundry } from "components";
+import { Providers } from "layout";
 import RouteComponent from "routes";
 
 function App() {
   return (
-    <ErrorBoundry>
+    <Providers>
       <RouteComponent />
-    </ErrorBoundry>
+    </Providers>
   );
 }
 
