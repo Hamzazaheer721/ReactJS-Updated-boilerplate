@@ -1,0 +1,53 @@
+.error-boundry-container {
+  background-color: #95c2de;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.mainbox {
+  margin: auto;
+  min-height: 600px;
+  max-width: 600px;
+  position: relative;
+}
+
+.err {
+  color: white;
+  font-size: 11rem;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
+
+.middle {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 44.5%;
+  top: 11%;
+  color: white;
+}
+
+.err2 {
+  color: white;
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  text-align: center;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}

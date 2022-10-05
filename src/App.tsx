@@ -1,8 +1,8 @@
-import RouteComponent from "routes";
-import "./App.css";
+import { ErrorBoundry } from "components";
+// import RouteComponent from "routes";
 
 function App() {
-  return <RouteComponent />;
+  return <ErrorBoundry />;
 }
 
 export default App;

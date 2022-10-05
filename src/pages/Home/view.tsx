@@ -1,4 +1,4 @@
-import HomeScreen from "components/HomeScreen";
+import { HomeScreen } from "components";
 import { FC, memo } from "react";
 
 const View: FC = memo(() => <HomeScreen />);

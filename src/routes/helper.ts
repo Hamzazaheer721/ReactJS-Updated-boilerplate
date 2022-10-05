@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 import { RoutesType } from "general";
 import Home from "pages/Home";
 

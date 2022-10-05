@@ -1,4 +1,3 @@
-/* eslint-disable react/function-component-definition */
 import { FC } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./helper";
