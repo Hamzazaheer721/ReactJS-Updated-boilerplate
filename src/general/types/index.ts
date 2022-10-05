@@ -2,7 +2,8 @@ import { FunctionComponent, ReactNode } from "react";
 
 export type RoutesType = {
   path: string;
-  component: FunctionComponent;
+  Component: FunctionComponent;
+  key: string;
 };
 export interface IErrorBoundryState {
   hasError: boolean;

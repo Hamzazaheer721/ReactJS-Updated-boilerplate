@@ -5,8 +5,8 @@ import { routes } from "./helper";
 const RouteComponent: FC = () => (
   <Router>
     <Routes>
-      {routes.map((route) => (
-        <Route path={route.path} element={<route.component />} />
+      {routes.map(({ key, path, Component }) => (
+        <Route key={key} path={path} element={<Component />} />
       ))}
     </Routes>
   </Router>
