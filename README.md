@@ -1,2 +1,5 @@
 Switch to other branches for respective boilerplates
-- switch to feature/styled-components will come with css in js approach.
+- main branch has default css styling boilerplate.
+- Switch to feature/styled-components, gives boilerplate with css in js approach.
+- Switch to feature/antd to have boilerplate with antd and styled-components.
+
