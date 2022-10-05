@@ -1,14 +1,8 @@
-import Loader from "components/Loader";
+import RouteComponent from "routes";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore
-      natus dolor magnam, impedit placeat ex, qui laudantium sint porro veniam
-      <Loader />
-    </div>
-  );
+  return <RouteComponent />;
 }
 
 export default App;
